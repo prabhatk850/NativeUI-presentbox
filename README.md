@@ -1,4 +1,26 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# PresentBox (React Native)
+
+React Native port of the `presentbox-ui` web app. One codebase runs on Android, iOS and web.
+
+| Command | What it does |
+|---|---|
+| `npm start` | Metro bundler for the native apps |
+| `npm run android` / `npm run ios` | Build and run on a device or emulator (iOS needs a Mac: `cd ios && pod install` first) |
+| `npm run web` / `npm run build:web` | Web via Vite + react-native-web (output in `dist-web/`) |
+| `npm run storybook` | Component stories in the browser |
+| `npm test` / `npm run lint` / `npm run typecheck` | Jest + React Native Testing Library, ESLint, TypeScript |
+
+Where things live:
+
+- `src/theme.ts` holds colors (primary = footer red), fonts, breakpoints. Change the brand color there.
+- `src/api` is the dummy API (JSON files). Swap a function body for a real `fetch` and components stay the same.
+- `src/components/{atoms,molecules,organisms,templates}` mirror the web app; each folder has the component, its test and its stories.
+- `src/icons.ts` lists every icon the app uses. Add new icons there so native bundles stay small.
+- Fonts live in `src/assets/fonts` and are linked with `npx react-native-asset`. Their file names match their PostScript names so one family name works on every platform.
+
+---
+
+This project was bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 

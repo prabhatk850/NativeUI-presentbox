@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "label": "Home",
+      "name": "Aanya Sharma",
+      "phone": "9876543210",
+      "line": "Flat 4B, Rose Apartments, MG Road",
+      "city": "New Delhi",
+      "pincode": "110001"
+    },
+    {
+      "id": 2,
+      "label": "Work",
+      "name": "Aanya Sharma",
+      "phone": "9876543210",
+      "line": "3rd Floor, Tower B, Cyber Hub",
+      "city": "Gurugram",
+      "pincode": "122002"
+    },
+    {
+      "id": 3,
+      "label": "Other",
+      "name": "Kabir Mehta",
+      "phone": "9123456780",
+      "line": "22, Lotus Lane, Koramangala 5th Block",
+      "city": "Bengaluru",
+      "pincode": "560095"
+    },
+    {
+      "id": 4,
+      "label": "Other",
+      "name": "Ishita Rao",
+      "phone": "9988776655",
+      "line": "B-12, Sea Breeze CHS, Bandra West",
+      "city": "Mumbai",
+      "pincode": "400050"
+    }
+  ]
+}

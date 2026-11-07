@@ -1,0 +1,5 @@
+dist-web/
+android/
+ios/
+coverage/
+storybook-static/

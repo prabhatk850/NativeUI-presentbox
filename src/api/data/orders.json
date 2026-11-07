@@ -1,0 +1,38 @@
+{
+  "data": [
+    {
+      "id": "PB-20481",
+      "placedOn": "2026-10-14",
+      "status": "Shipped",
+      "statusNote": "Arriving by Sat, 18 Oct",
+      "items": [
+        { "productId": 25, "qty": 1 },
+        { "productId": 28, "qty": 2 }
+      ]
+    },
+    {
+      "id": "PB-20317",
+      "placedOn": "2026-10-02",
+      "status": "Delivered",
+      "statusNote": "Delivered on Sun, 5 Oct",
+      "items": [
+        { "productId": 1, "qty": 1 },
+        { "productId": 10, "qty": 1 }
+      ]
+    },
+    {
+      "id": "PB-19954",
+      "placedOn": "2026-09-21",
+      "status": "Delivered",
+      "statusNote": "Delivered on Wed, 24 Sep",
+      "items": [{ "productId": 13, "qty": 1 }]
+    },
+    {
+      "id": "PB-19620",
+      "placedOn": "2026-09-08",
+      "status": "Cancelled",
+      "statusNote": "Refund of INR 1,598 sent to UPI",
+      "items": [{ "productId": 20, "qty": 2 }]
+    }
+  ]
+}

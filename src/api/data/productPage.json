@@ -1,0 +1,727 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Flowers"
+    },
+    {
+      "id": 2,
+      "name": "Cakes"
+    },
+    {
+      "id": 3,
+      "name": "Chocolates"
+    },
+    {
+      "id": 4,
+      "name": "Hampers"
+    },
+    {
+      "id": 5,
+      "name": "Personalised"
+    },
+    {
+      "id": 6,
+      "name": "Plants"
+    },
+    {
+      "id": 7,
+      "name": "Room Decor"
+    },
+    {
+      "id": 8,
+      "name": "Self Care"
+    }
+  ],
+  "occasions": [
+    {
+      "id": 1,
+      "name": "Birthday"
+    },
+    {
+      "id": 2,
+      "name": "Anniversary"
+    },
+    {
+      "id": 3,
+      "name": "Wedding"
+    },
+    {
+      "id": 4,
+      "name": "Valentine’s Day"
+    },
+    {
+      "id": 5,
+      "name": "Friendship Day"
+    },
+    {
+      "id": 6,
+      "name": "Housewarming"
+    },
+    {
+      "id": 7,
+      "name": "Graduation"
+    },
+    {
+      "id": 8,
+      "name": "Just Because"
+    }
+  ],
+  "data": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "type": "Hot",
+      "Raiting": 4.8,
+      "name": "Pastel Tulip Bouquet",
+      "price": "INR 1,499",
+      "img": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600&q=80",
+      "gender": "Women",
+      "occasionIds": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "description": "Soft-pink and lilac tulips wrapped in matte pastel paper — the bouquet that makes every feed look curated.",
+      "highlights": [
+        "10 fresh tulips in pastel shades",
+        "Matte wrap with satin ribbon",
+        "Handwritten message card included"
+      ]
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "type": "New",
+      "Raiting": 4.6,
+      "name": "Dried Pampas & Bunny Tail Bunch",
+      "price": "INR 1,199",
+      "img": "https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=600&q=80",
+      "gender": "All",
+      "occasionIds": [
+        6,
+        3,
+        8
+      ],
+      "description": "Fluffy pampas and bunny-tail grass in warm neutrals. No water, no wilting — it stays aesthetic for months.",
+      "highlights": [
+        "Dried, lasts 12+ months",
+        "Neutral boho tones",
+        "Ready to drop in any vase"
+      ]
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "Raiting": 4.4,
+      "name": "Wildflower Mini Bunch",
+      "price": "INR 799",
+      "img": "https://images.unsplash.com/photo-1487070183336-b863922373d4?w=600&q=80",
+      "gender": "All",
+      "occasionIds": [
+        5,
+        1,
+        8
+      ],
+      "description": "A tiny, carefree bunch of seasonal wildflowers for the friend who loves a cottagecore moment.",
+      "highlights": [
+        "Seasonal mixed stems",
+        "Mini size, perfect for desks",
+        "Kraft wrap with twine"
+      ]
+    },
+    {
+      "id": 4,
+      "categoryId": 1,
+      "type": "Sale",
+      "Raiting": 4.7,
+      "name": "Blush Rose Hatbox",
+      "price": "INR 2,299",
+      "img": "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=600&q=80",
+      "gender": "Women",
+      "occasionIds": [
+        2,
+        4,
+        3
+      ],
+      "description": "Blush roses arranged in a round velvet hatbox. Lift the lid and it’s an instant main-character moment.",
+      "highlights": [
+        "16 premium blush roses",
+        "Reusable velvet hatbox",
+        "Stays fresh 5–7 days"
+      ]
+    },
+    {
+      "id": 5,
+      "categoryId": 2,
+      "type": "Hot",
+      "Raiting": 4.9,
+      "name": "Bento Lunchbox Cake",
+      "price": "INR 899",
+      "img": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80",
+      "gender": "All",
+      "occasionIds": [
+        1,
+        5,
+        7
+      ],
+      "description": "The viral bento-box cake: a 4-inch mini cake with your custom message piped on top. Small cake, big feelings.",
+      "highlights": [
+        "4-inch cake, serves 1–2",
+        "Custom message piped on top",
+        "Choice of chocolate or vanilla"
+      ]
+    },
+    {
+      "id": 6,
+      "categoryId": 2,
+      "type": "New",
+      "Raiting": 4.5,
+      "name": "Retro Heart Vintage Cake",
+      "price": "INR 1,599",
+      "img": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&q=80",
+      "gender": "All",
+      "occasionIds": [
+        4,
+        2,
+        1
+      ],
+      "description": "A vintage-style heart cake with ruffled piping, cherries and all the retro charm Pinterest is obsessed with.",
+      "highlights": [
+        "Lambeth-style ruffle piping",
+        "Heart shape, serves 4–6",
+        "Topped with glazed cherries"
+      ]
+    },
+    {
+      "id": 7,
+      "categoryId": 2,
+      "Raiting": 4.6,
+      "name": "Strawberry Shortcake Jar",
+      "price": "INR 549",
+      "img": "https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=600&q=80",
+      "gender": "Kids",
+      "occasionIds": [
+        1,
+        8
+      ],
+      "description": "Layers of fresh strawberries, soft sponge and whipped cream in a jar. Grab a spoon and go.",
+      "highlights": [
+        "Fresh strawberries and cream",
+        "Single-serve glass jar",
+        "Best enjoyed within 24 hours"
+      ]
+    },
+    {
+      "id": 8,
+      "categoryId": 2,
+      "type": "Sale",
+      "Raiting": 4.3,
+      "name": "Funfetti Cupcake Box (6)",
+      "price": "INR 699",
+      "img": "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=600&q=80",
+      "gender": "Kids",
+      "occasionIds": [
+        1,
+        7,
+        5
+      ],
+      "description": "Six rainbow-sprinkle cupcakes topped with vanilla buttercream. Birthday energy in a box.",
+      "highlights": [
+        "Box of 6 cupcakes",
+        "Rainbow sprinkle sponge",
+        "Vanilla bean buttercream"
+      ]
+    },
+    {
+      "id": 9,
+      "categoryId": 3,
+      "type": "New",
+      "Raiting": 4.7,
+      "name": "Sea Salt Dark Chocolate Bark",
+      "price": "INR 649",
+      "img": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=600&q=80",
+      "gender": "Men",
+      "occasionIds": [
+        8,
+        1,
+        6
+      ],
+      "description": "Hand-broken dark chocolate bark with sea salt flakes, almonds and dried berries. Sweet, salty, very snackable.",
+      "highlights": [
+        "70% dark chocolate",
+        "Sea salt, almonds and berries",
+        "Recyclable gift tin"
+      ]
+    },
+    {
+      "id": 10,
+      "categoryId": 3,
+      "type": "Hot",
+      "Raiting": 4.8,
+      "name": "Hazelnut Truffle Box (12)",
+      "price": "INR 1,299",
+      "img": "https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=600&q=80",
+      "gender": "All",
+      "occasionIds": [
+        2,
+        4,
+        3
+      ],
+      "description": "Twelve glossy hazelnut truffles with a crunchy praline centre, boxed like a little treasure.",
+      "highlights": [
+        "Box of 12 truffles",
+        "Roasted hazelnut praline centre",
+        "Gift-ready box with ribbon"
+      ]
+    },
+    {
+      "id": 11,
+      "categoryId": 3,
+      "Raiting": 4.4,
+      "name": "Matcha White Chocolate Bar",
+      "price": "INR 449",
+      "img": "https://images.unsplash.com/photo-1511381939415-e44015466834?w=600&q=80",
+      "gender": "Women",
+      "occasionIds": [
+        5,
+        8
+      ],
+      "description": "Creamy white chocolate swirled with ceremonial-grade matcha. Earthy, sweet and very green.",
+      "highlights": [
+        "Ceremonial-grade matcha",
+        "Creamy white chocolate",
+        "100 g bar"
+      ]
+    },
+    {
+      "id": 12,
+      "categoryId": 3,
+      "type": "Sale",
+      "Raiting": 4.5,
+      "name": "Cookie Dough Bites Tin",
+      "price": "INR 599",
+      "img": "https://images.unsplash.com/photo-1548907040-4baa42d10919?w=600&q=80",
+      "gender": "Kids",
+      "occasionIds": [
+        1,
+        5,
+        8
+      ],
+      "description": "Bite-sized, egg-free cookie dough balls dipped in milk chocolate. Safe to eat straight from the tin.",
+      "highlights": [
+        "Egg-free cookie dough",
+        "Milk chocolate coating",
+        "Resealable tin"
+      ]
+    },
+    {
+      "id": 13,
+      "categoryId": 4,
+      "type": "Hot",
+      "Raiting": 4.9,
+      "name": "Cozy Night-In Hamper",
+      "price": "INR 2,999",
+      "img": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&q=80",
+      "gender": "All",
+      "occasionIds": [
+        6,
+        8,
+        5
+      ],
+      "description": "Everything for a cosy night in: a scented candle, hot chocolate mix, cookies and fuzzy socks.",
+      "highlights": [
+        "Soy candle, cocoa mix and cookies",
+        "Fuzzy socks included",
+        "Packed in a reusable crate"
+      ]
+    },
+    {
+      "id": 14,
+      "categoryId": 4,
+      "type": "New",
+      "Raiting": 4.7,
+      "name": "Self-Love Sunday Box",
+      "price": "INR 2,499",
+      "img": "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&q=80",
+      "gender": "Women",
+      "occasionIds": [
+        8,
+        1
+      ],
+      "description": "A self-care box for a slow Sunday: face mask, bath salts, herbal tea and a gratitude journal.",
+      "highlights": [
+        "Sheet mask and bath salts",
+        "Calming herbal tea",
+        "Pocket gratitude journal"
+      ]
+    },
+    {
+      "id": 15,
+      "categoryId": 4,
+      "Raiting": 4.6,
+      "name": "Bestie Birthday Box",
+      "price": "INR 1,999",
+      "img": "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=600&q=80",
+      "gender": "All",
+      "occasionIds": [
+        1,
+        5
+      ],
+      "description": "The ultimate bestie birthday box with confetti, a mini cake, a polaroid frame and a birthday sash.",
+      "highlights": [
+        "Mini cake and confetti",
+        "Polaroid photo frame",
+        "Birthday sash and balloons"
+      ]
+    },
+    {
+      "id": 16,
+      "categoryId": 4,
+      "type": "Sale",
+      "Raiting": 4.5,
+      "name": "Iced Coffee Lover Crate",
+      "price": "INR 1,799",
+      "img": "https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=600&q=80",
+      "gender": "Men",
+      "occasionIds": [
+        1,
+        7,
+        8
+      ],
+      "description": "For the iced-coffee addict: cold-brew bags, a glass tumbler with straw, and caramel syrup.",
+      "highlights": [
+        "6 cold-brew coffee bags",
+        "Glass tumbler with straw",
+        "Caramel syrup bottle"
+      ]
+    },
+    {
+      "id": 17,
+      "categoryId": 5,
+      "type": "Hot",
+      "Raiting": 4.8,
+      "name": "Custom Name Journal",
+      "price": "INR 899",
+      "img": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=600&q=80",
+      "gender": "All",
+      "occasionIds": [
+        7,
+        1
+      ],
+      "description": "A soft-cover journal with their name foil-stamped on the front. For lists, dreams and late-night thoughts.",
+      "highlights": [
+        "Name foil-stamped on cover",
+        "A5, 160 dotted pages",
+        "Lay-flat binding"
+      ]
+    },
+    {
+      "id": 18,
+      "categoryId": 5,
+      "type": "New",
+      "Raiting": 4.6,
+      "name": "Polaroid Memory Prints (20)",
+      "price": "INR 699",
+      "img": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=600&q=80",
+      "gender": "All",
+      "occasionIds": [
+        5,
+        2,
+        4,
+        7
+      ],
+      "description": "Twenty of your favourite photos printed as retro polaroids, with mini pegs and string to hang them.",
+      "highlights": [
+        "20 polaroid-style prints",
+        "Upload photos after ordering",
+        "Pegs and fairy string included"
+      ]
+    },
+    {
+      "id": 19,
+      "categoryId": 5,
+      "Raiting": 4.5,
+      "name": "Hand-Lettered Letter Set",
+      "price": "INR 499",
+      "img": "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=600&q=80",
+      "gender": "All",
+      "occasionIds": [
+        4,
+        2,
+        5
+      ],
+      "description": "A hand-lettered letter set with envelopes and wax seals, for the messages a text can’t hold.",
+      "highlights": [
+        "10 sheets and 10 envelopes",
+        "Hand-lettered designs",
+        "Wax seal stickers included"
+      ]
+    },
+    {
+      "id": 20,
+      "categoryId": 5,
+      "type": "Sale",
+      "Raiting": 4.4,
+      "name": "Name Engraved Cafe Mug",
+      "price": "INR 599",
+      "img": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=600&q=80",
+      "gender": "Men",
+      "occasionIds": [
+        1,
+        6,
+        7
+      ],
+      "description": "A café-style ceramic mug engraved with their name. Morning coffee, but make it personal.",
+      "highlights": [
+        "Engraved name, up to 12 letters",
+        "350 ml ceramic mug",
+        "Microwave and dishwasher safe"
+      ]
+    },
+    {
+      "id": 21,
+      "categoryId": 6,
+      "type": "New",
+      "Raiting": 4.7,
+      "name": "Mini Monstera in Ceramic Pot",
+      "price": "INR 999",
+      "img": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=600&q=80",
+      "gender": "All",
+      "occasionIds": [
+        6,
+        7,
+        8
+      ],
+      "description": "A baby monstera in a speckled ceramic pot. Big jungle vibes, small desk footprint.",
+      "highlights": [
+        "Live mini monstera",
+        "Speckled ceramic pot",
+        "Easy care, indirect light"
+      ]
+    },
+    {
+      "id": 22,
+      "categoryId": 6,
+      "type": "Hot",
+      "Raiting": 4.8,
+      "name": "Hanging Pothos Planter",
+      "price": "INR 849",
+      "img": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=600&q=80",
+      "gender": "All",
+      "occasionIds": [
+        6,
+        3
+      ],
+      "description": "Trailing golden pothos in a macramé hanger. Practically unkillable and very aesthetic.",
+      "highlights": [
+        "Live golden pothos",
+        "Handmade macramé hanger",
+        "Thrives in low light"
+      ]
+    },
+    {
+      "id": 23,
+      "categoryId": 6,
+      "Raiting": 4.5,
+      "name": "Desk Plant Duo",
+      "price": "INR 1,199",
+      "img": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80",
+      "gender": "Men",
+      "occasionIds": [
+        5,
+        6
+      ],
+      "description": "Two little desk plants in matching pastel pots, one for you and one for your bestie.",
+      "highlights": [
+        "2 live desk plants",
+        "Matching pastel pots",
+        "Low maintenance"
+      ]
+    },
+    {
+      "id": 24,
+      "categoryId": 6,
+      "type": "Sale",
+      "Raiting": 4.6,
+      "name": "Succulent Trio Set",
+      "price": "INR 699",
+      "img": "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=600&q=80",
+      "gender": "All",
+      "occasionIds": [
+        7,
+        8,
+        6
+      ],
+      "description": "Three chunky succulents in mini terracotta pots. Water once a week, admire every day.",
+      "highlights": [
+        "3 live succulents",
+        "Mini terracotta pots",
+        "Water once a week"
+      ]
+    },
+    {
+      "id": 25,
+      "categoryId": 7,
+      "type": "Hot",
+      "Raiting": 4.8,
+      "name": "Sunset Projection Lamp",
+      "price": "INR 1,499",
+      "img": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&q=80",
+      "gender": "All",
+      "occasionIds": [
+        1,
+        7,
+        6
+      ],
+      "description": "The sunset lamp that turns any wall into golden hour. Instant glow-up for selfies and late-night vibes.",
+      "highlights": [
+        "Projects a sunset-glow halo",
+        "180° rotating head",
+        "USB powered"
+      ]
+    },
+    {
+      "id": 26,
+      "categoryId": 7,
+      "type": "New",
+      "Raiting": 4.6,
+      "name": "Mushroom Glow Night Lamp",
+      "price": "INR 1,299",
+      "img": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&q=80",
+      "gender": "Kids",
+      "occasionIds": [
+        1,
+        8
+      ],
+      "description": "A dreamy glass mushroom lamp with a warm glow, straight out of a fairy-core bedroom.",
+      "highlights": [
+        "Warm white LED",
+        "Touch dimmer, 3 levels",
+        "Rechargeable, cordless"
+      ]
+    },
+    {
+      "id": 27,
+      "categoryId": 7,
+      "Raiting": 4.7,
+      "name": "Vanilla Soy Candle Duo",
+      "price": "INR 899",
+      "img": "https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?w=600&q=80",
+      "gender": "Women",
+      "occasionIds": [
+        6,
+        3,
+        2
+      ],
+      "description": "Two hand-poured vanilla soy candles in reusable amber jars. Cosy scent, clean burn.",
+      "highlights": [
+        "2 × 150 g soy candles",
+        "Vanilla and tonka scent",
+        "Around 30 hours burn each"
+      ]
+    },
+    {
+      "id": 28,
+      "categoryId": 7,
+      "type": "Sale",
+      "Raiting": 4.4,
+      "name": "Fairy Light Photo Clips",
+      "price": "INR 499",
+      "img": "https://images.unsplash.com/photo-1603006905003-be475563bc59?w=600&q=80",
+      "gender": "All",
+      "occasionIds": [
+        5,
+        1,
+        7
+      ],
+      "description": "Warm fairy lights with 20 clips to hang photos, notes and polaroids. A wall of memories in minutes.",
+      "highlights": [
+        "5 m warm white LED string",
+        "20 clear photo clips",
+        "Battery or USB powered"
+      ]
+    },
+    {
+      "id": 29,
+      "categoryId": 8,
+      "type": "Hot",
+      "Raiting": 4.8,
+      "name": "Glass Skin Starter Kit",
+      "price": "INR 1,899",
+      "img": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&q=80",
+      "gender": "Women",
+      "occasionIds": [
+        1,
+        4
+      ],
+      "description": "A glass-skin starter kit with a gentle cleanser, hydrating toner and dewy moisturiser.",
+      "highlights": [
+        "Cleanser, toner and moisturiser",
+        "Suitable for all skin types",
+        "Travel-friendly sizes"
+      ]
+    },
+    {
+      "id": 30,
+      "categoryId": 8,
+      "type": "New",
+      "Raiting": 4.6,
+      "name": "Sheet Mask Bundle (7)",
+      "price": "INR 799",
+      "img": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600&q=80",
+      "gender": "Women",
+      "occasionIds": [
+        5,
+        8
+      ],
+      "description": "A week of sheet masks: seven formulas for glow, hydration and calm, one for every mood.",
+      "highlights": [
+        "7 different sheet masks",
+        "Hydrating, brightening, soothing",
+        "Cruelty-free"
+      ]
+    },
+    {
+      "id": 31,
+      "categoryId": 8,
+      "Raiting": 4.5,
+      "name": "Cloud Lip Tint Trio",
+      "price": "INR 999",
+      "img": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80",
+      "gender": "Women",
+      "occasionIds": [
+        1,
+        4,
+        5
+      ],
+      "description": "Three lightweight lip tints in soft rose, berry and peach with a blurred, cloud-like finish.",
+      "highlights": [
+        "3 shades: rose, berry, peach",
+        "Lightweight, blurred finish",
+        "Doubles as blush"
+      ]
+    },
+    {
+      "id": 32,
+      "categoryId": 8,
+      "type": "Sale",
+      "Raiting": 4.4,
+      "name": "Fizzy Bath Bomb Set",
+      "price": "INR 649",
+      "img": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&q=80",
+      "gender": "Kids",
+      "occasionIds": [
+        1,
+        8
+      ],
+      "description": "Six fizzy bath bombs in pastel colours, with shea butter and essential oils for a soft, scented soak.",
+      "highlights": [
+        "Set of 6 bath bombs",
+        "Shea butter and essential oils",
+        "Pastel colours, no stains"
+      ]
+    }
+  ]
+}

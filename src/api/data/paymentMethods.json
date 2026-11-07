@@ -1,0 +1,8 @@
+{
+  "data": [
+    { "id": 1, "type": "UPI", "label": "aanya@okicici", "detail": "UPI · ICICI Bank", "isDefault": true },
+    { "id": 2, "type": "Card", "label": "Visa •••• 4242", "detail": "Expires 08/28" },
+    { "id": 3, "type": "Card", "label": "Mastercard •••• 5100", "detail": "Expires 11/27" },
+    { "id": 4, "type": "Wallet", "label": "Paytm Wallet", "detail": "Linked to 98765 43210" }
+  ]
+}

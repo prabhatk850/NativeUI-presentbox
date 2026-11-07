@@ -1,0 +1,66 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Occasions",
+      "grid": "heading_menu_item_image",
+      "menuDescription": { "heading": "Gifts for every occasion", "description": "Birthdays, anniversaries, weddings and everything in between." },
+      "img": { "url": "https://i.pinimg.com/1200x/2c/7d/ef/2c7defb55d5b41aecf4a71cebb617aa8.jpg" },
+      "navlink": [
+        {
+          "id": 1,
+          "navlinks": [
+            { "id": 1, "lable": "Birthday", "url": "/products" },
+            { "id": 2, "lable": "Anniversary", "url": "/products" },
+            { "id": 3, "lable": "Wedding", "url": "/products" },
+            { "id": 4, "lable": "Valentine’s Day", "url": "/products" },
+            { "id": 5, "lable": "Friendship Day", "url": "/products" },
+            { "id": 6, "lable": "Housewarming", "url": "/products" },
+            { "id": 7, "lable": "Graduation", "url": "/products" },
+            { "id": 8, "lable": "Just Because", "url": "/products" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Categories",
+      "grid": "menu_item_menu_item_menu_item",
+      "menuDescription": { "heading": "Shop by category", "description": "" },
+      "img": null,
+      "navlink": [
+        {
+          "id": 2,
+          "navlinks": [
+            { "id": 9, "lable": "Flowers", "url": "/products" },
+            { "id": 10, "lable": "Cakes", "url": "/products" },
+            { "id": 11, "lable": "Chocolates", "url": "/products" }
+          ]
+        },
+        {
+          "id": 3,
+          "navlinks": [
+            { "id": 12, "lable": "Hampers", "url": "/products" },
+            { "id": 13, "lable": "Personalised", "url": "/products" },
+            { "id": 14, "lable": "Plants", "url": "/products" }
+          ]
+        },
+        {
+          "id": 4,
+          "navlinks": [
+            { "id": 15, "lable": "Room Decor", "url": "/products" },
+            { "id": 16, "lable": "Self Care", "url": "/products" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "About",
+      "grid": "heading_image_image",
+      "menuDescription": { "heading": "About PresentBox", "description": "Thoughtful gifts, delivered with care." },
+      "img": { "url": "https://i.pinimg.com/1200x/24/c7/28/24c72886928b5122fa8c94abc3b2667d.jpg" },
+      "navlink": []
+    }
+  ]
+}

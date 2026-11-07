@@ -1,0 +1,43 @@
+{
+  "data": {
+    "faqs": [
+      {
+        "id": 1,
+        "topic": "Orders",
+        "question": "How do I track my order?",
+        "answer": "Open Orders from the menu. Each order shows its status and expected delivery date, and updates as soon as the courier scans it."
+      },
+      {
+        "id": 2,
+        "topic": "Delivery",
+        "question": "Is delivery free?",
+        "answer": "Yes, on orders above INR 999. Smaller orders have a flat INR 49 delivery fee."
+      },
+      {
+        "id": 3,
+        "topic": "Delivery",
+        "question": "Can I schedule a delivery for a specific date?",
+        "answer": "Flowers and cakes can be scheduled up to 7 days ahead. Pick a date at checkout and we’ll deliver it fresh on the day."
+      },
+      {
+        "id": 4,
+        "topic": "Returns",
+        "question": "What is your return policy?",
+        "answer": "Non-perishable gifts can be returned within 7 days of delivery. Flowers, cakes and chocolates can’t be returned, but we’ll replace them if they arrive damaged."
+      },
+      {
+        "id": 5,
+        "topic": "Payments",
+        "question": "Which payment methods do you accept?",
+        "answer": "UPI, all major debit and credit cards, net banking and popular wallets. Saved methods appear under Payment Methods."
+      },
+      {
+        "id": 6,
+        "topic": "Gifting",
+        "question": "Can I add a personal message?",
+        "answer": "Every order includes a free message card. Personalised gifts like journals and mugs also let you add a name before checkout."
+      }
+    ],
+    "contact": { "email": "support@presentbox.example", "phone": "+911800123456", "hours": "Every day, 9 am – 9 pm" }
+  }
+}
