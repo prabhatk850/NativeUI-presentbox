@@ -1,0 +1,31 @@
+# Runs the images the pipeline pushes to Docker Hub, one container per environment, on a Debian server.
+#   docker compose up -d            all three + watchtower
+#   docker compose up -d qa         one environment
+# Watchtower checks Docker Hub every 60 s and restarts a container when its tag has a new image,
+# so a push to dev/qa/main goes live on its own a minute or two after the pipeline finishes.
+services:
+  main:
+    image: prabhatk850/presentbox:latest
+    container_name: presentbox_main
+    ports: ["80:80"]
+    restart: unless-stopped
+  qa:
+    image: prabhatk850/presentbox:qa
+    container_name: presentbox_qa
+    ports: ["8081:80"]
+    restart: unless-stopped
+  dev:
+    image: prabhatk850/presentbox:dev
+    container_name: presentbox_dev
+    ports: ["8082:80"]
+    restart: unless-stopped
+  watchtower:
+    image: containrrr/watchtower
+    container_name: presentbox_watchtower
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      # watchtower is no longer maintained and defaults to Docker API 1.25, which Docker 29+ refuses
+      - DOCKER_API_VERSION=1.44
+    command: --interval 60 --cleanup presentbox_main presentbox_qa presentbox_dev
