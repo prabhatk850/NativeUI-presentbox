@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { Platform, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import Video, { ViewType, type ReactVideoSource, type VideoRef } from 'react-native-video';
 import { breakpoints, fonts, gradients, layout } from '../../../theme';
 
@@ -17,7 +17,7 @@ function VideoComponent({ source, text }: { source: Source; text: string }) {
       <Video
         ref={player}
         source={{ uri: source } as unknown as ReactVideoSource /* uri may be a Metro asset id, supported at runtime */}
-        style={StyleSheet.absoluteFill}
+        style={[StyleSheet.absoluteFill, styles.video]}
         resizeMode="cover"
         repeat
         // safety net for Android players that stop on the last frame despite `repeat`
@@ -46,6 +46,9 @@ function VideoComponent({ source, text }: { source: Source; text: string }) {
 
 const styles = StyleSheet.create({
   background: { width: '100%', overflow: 'hidden', backgroundColor: '#000' },
+  // react-native-video's web player ignores resizeMode and always letterboxes (objectFit: contain);
+  // on a tall phone screen that leaves black bands above and below the clip (objectFit is web-only CSS, not in RN's types)
+  video: Platform.OS === 'web' ? ({ objectFit: 'cover' } as object) : {},
   scrim: { backgroundImage: gradients.heroScrim },
   overlay: { flex: 1 },
   // phones: headline sits low, left-aligned, like a native app hero; desktop: centred
