@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Animated, Pressable, StyleSheet, Text, View, useWindowDimensions, type NativeScrollEvent, type NativeSyntheticEvent } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { ArrowLeft, X } from '../../../icons';
+import { ArrowLeft, X } from '../../../theme/icons';
 import { breakpoints, colors, layout, shadows, type } from '../../../theme';
 
 type Props = {

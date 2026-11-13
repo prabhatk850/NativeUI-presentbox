@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen, userEvent } from '@testing-library/react-native';
 import FilterPage from './FilterPage';
-import { NO_FILTERS } from '../../../helper';
-import page from '../../../api/data/productPage.json';
+import { NO_FILTERS } from '../../../utils';
+import page from '../../../mocks/productPage.json';
 
 const occasions = page.occasions;
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, userEvent } from '@testing-library/react-native';
-import { ArrowUpRight, ShoppingBag } from '../../../icons';
+import { ArrowUpRight, ShoppingBag } from '../../../theme/icons';
 import Button from './Button';
 
 describe('Button', () => {

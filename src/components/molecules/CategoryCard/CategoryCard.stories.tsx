@@ -10,7 +10,7 @@ export const Big: Story = {
   args: { variant: 'big', title: 'All Products', description: 'Make their day unforgettable.', image: img, button: { name: 'Browse All Products', color: '#d32f2f' } },
 };
 export const Rectangle: Story = {
-  args: { variant: 'reactangle', title: 'Hampers', description: 'Curated boxes for every taste.', image: img, button: { name: 'Shop now', color: '#fff', textColor: 'black' } },
+  args: { variant: 'rectangle', title: 'Hampers', description: 'Curated boxes for every taste.', image: img, button: { name: 'Shop now', color: '#fff', textColor: 'black' } },
 };
 export const SquareArrowOnly: Story = {
   args: { variant: 'square', title: 'Flowers', description: 'Fresh bouquets delivered today.', image: img, button: { color: '#fff', textColor: 'black' } },

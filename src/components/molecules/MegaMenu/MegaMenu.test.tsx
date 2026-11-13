@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react-native';
 import MegaMenu, { flattenLinksForMenu, normalizeGroupsForThreeColumns } from './MegaMenu';
 
 const links = [
-  { id: 1, navlinks: [{ id: 1, lable: 'Birthday', url: '/products' }, { id: 2, lable: 'Wedding', url: '/products' }] },
+  { id: '1', navlinks: [{ id: '1', lable: 'Birthday', url: '/products' }, { id: '2', lable: 'Wedding', url: '/products' }] },
 ];
 
 describe('MegaMenu', () => {
@@ -23,7 +23,7 @@ describe('MegaMenu', () => {
   });
 
   it('normalizes the API link shapes', () => {
-    const flat = [{ id: 1, lable: 'A', url: '#' }, { id: 2, lable: 'B', url: '#' }, { id: 3, lable: 'C', url: '#' }, { id: 4, lable: 'D', url: '#' }];
+    const flat = [{ id: '1', lable: 'A', url: '#' }, { id: '2', lable: 'B', url: '#' }, { id: '3', lable: 'C', url: '#' }, { id: '4', lable: 'D', url: '#' }];
     expect(flattenLinksForMenu(links).map((l) => l.lable)).toEqual(['Birthday', 'Wedding']);
     expect(normalizeGroupsForThreeColumns(flat).map((c) => c.map((l) => l.lable))).toEqual([['A', 'D'], ['B'], ['C']]);
     expect(normalizeGroupsForThreeColumns(undefined)).toEqual([[], [], []]);

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-native-web-vite';
 import AddressModal from './AddressModal';
 import { shop } from '../../../store';
-import addresses from '../../../api/data/addresses.json';
+import addresses from '../../../mocks/addresses.json';
 
 const meta: Meta<typeof AddressModal> = { title: 'Organisms/AddressModal', component: AddressModal, args: { open: true, onClose: () => {} } };
 export default meta;

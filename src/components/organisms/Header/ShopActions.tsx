@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { ChevronDown, Heart, MapPin, Search, ShoppingCart, type LucideIcon } from '../../../icons';
+import { ChevronDown, Heart, MapPin, Search, ShoppingCart, type LucideIcon } from '../../../theme/icons';
 import AddressModal from '../AddressModal/AddressModal';
 import WishlistModal from '../WishlistModal/WishlistModal';
 import SearchModal from '../SearchModal/SearchModal';

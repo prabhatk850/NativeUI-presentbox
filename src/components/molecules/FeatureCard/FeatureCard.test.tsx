@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react-native';
-import { Truck } from '../../../icons';
+import { Truck } from '../../../theme/icons';
 import FeatureCard from './FeatureCard';
 
 describe('FeatureCard', () => {

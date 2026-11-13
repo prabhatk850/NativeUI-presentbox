@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react-native';
 import ProductGrid from './ProductGrid';
-import products from '../../../api/data/productPage.json';
+import products from '../../../mocks/productPage.json';
 
 describe('ProductGrid', () => {
   it('renders every product it is given', async () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
-import { Quote } from '../../../icons';
+import { Quote } from '../../../theme/icons';
 import { breakpoints, colors, fonts, radius, type } from '../../../theme';
 
 export type Review = { name: string; rating: number; avatar: string; title: string; message: string };

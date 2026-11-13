@@ -1,4 +1,4 @@
-import { Truck } from '../../../icons';
+import { Truck } from '../../../theme/icons';
 import type { Meta, StoryObj } from '@storybook/react-native-web-vite';
 import FeatureCard from './FeatureCard';
 

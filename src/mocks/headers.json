@@ -1,0 +1,143 @@
+{
+  "data": [
+    {
+      "id": "menu-1",
+      "name": "Occasions",
+      "grid": "heading_menu_item_image",
+      "menuDescription": {
+        "heading": "Gifts for every occasion",
+        "description": "Birthdays, anniversaries, weddings and everything in between."
+      },
+      "img": {
+        "url": "https://i.pinimg.com/1200x/2c/7d/ef/2c7defb55d5b41aecf4a71cebb617aa8.jpg"
+      },
+      "navlink": [
+        {
+          "id": "menu-links-1",
+          "navlinks": [
+            {
+              "id": "menu-link-1",
+              "lable": "Birthday",
+              "url": "/products"
+            },
+            {
+              "id": "menu-link-2",
+              "lable": "Anniversary",
+              "url": "/products"
+            },
+            {
+              "id": "menu-link-3",
+              "lable": "Wedding",
+              "url": "/products"
+            },
+            {
+              "id": "menu-link-4",
+              "lable": "Valentine’s Day",
+              "url": "/products"
+            },
+            {
+              "id": "menu-link-5",
+              "lable": "Friendship Day",
+              "url": "/products"
+            },
+            {
+              "id": "menu-link-6",
+              "lable": "Housewarming",
+              "url": "/products"
+            },
+            {
+              "id": "menu-link-7",
+              "lable": "Graduation",
+              "url": "/products"
+            },
+            {
+              "id": "menu-link-8",
+              "lable": "Just Because",
+              "url": "/products"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "menu-2",
+      "name": "Categories",
+      "grid": "menu_item_menu_item_menu_item",
+      "menuDescription": {
+        "heading": "Shop by category",
+        "description": ""
+      },
+      "img": null,
+      "navlink": [
+        {
+          "id": "menu-links-2",
+          "navlinks": [
+            {
+              "id": "menu-link-9",
+              "lable": "Flowers",
+              "url": "/products"
+            },
+            {
+              "id": "menu-link-10",
+              "lable": "Cakes",
+              "url": "/products"
+            },
+            {
+              "id": "menu-link-11",
+              "lable": "Chocolates",
+              "url": "/products"
+            }
+          ]
+        },
+        {
+          "id": "menu-links-3",
+          "navlinks": [
+            {
+              "id": "menu-link-12",
+              "lable": "Hampers",
+              "url": "/products"
+            },
+            {
+              "id": "menu-link-13",
+              "lable": "Personalised",
+              "url": "/products"
+            },
+            {
+              "id": "menu-link-14",
+              "lable": "Plants",
+              "url": "/products"
+            }
+          ]
+        },
+        {
+          "id": "menu-links-4",
+          "navlinks": [
+            {
+              "id": "menu-link-15",
+              "lable": "Room Decor",
+              "url": "/products"
+            },
+            {
+              "id": "menu-link-16",
+              "lable": "Self Care",
+              "url": "/products"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "menu-3",
+      "name": "About",
+      "grid": "heading_image_image",
+      "menuDescription": {
+        "heading": "About PresentBox",
+        "description": "Thoughtful gifts, delivered with care."
+      },
+      "img": {
+        "url": "https://i.pinimg.com/1200x/24/c7/28/24c72886928b5122fa8c94abc3b2667d.jpg"
+      },
+      "navlink": []
+    }
+  ]
+}

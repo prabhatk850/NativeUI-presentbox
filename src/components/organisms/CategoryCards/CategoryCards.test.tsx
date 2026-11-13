@@ -1,13 +1,15 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react-native';
 import CategoryCards from './CategoryCards';
-import cards from '../../../api/data/categoryCards.json';
+import { pageSection } from '../../../mocks';
+
+const { cards } = pageSection('home', 'categoryCardsSection');
 
 describe('CategoryCards', () => {
-  it('renders a card for every category from the API', async () => {
-    await render(<CategoryCards />);
-    for (const card of cards.data) {
-      expect(await screen.findByText(card.title)).toBeOnTheScreen();
+  it('renders a card for every category', async () => {
+    await render(<CategoryCards cards={cards} />);
+    for (const card of cards) {
+      expect(screen.getByText(card.title)).toBeOnTheScreen();
     }
   });
 });

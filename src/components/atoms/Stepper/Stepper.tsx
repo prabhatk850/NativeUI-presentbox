@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { Minus, Plus } from '../../../icons';
+import { Minus, Plus } from '../../../theme/icons';
 import { colors, fonts, radius, type } from '../../../theme';
 
 type Props = {

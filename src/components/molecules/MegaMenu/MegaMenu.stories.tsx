@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import type { Meta, StoryObj } from '@storybook/react-native-web-vite';
 import MegaMenu from './MegaMenu';
-import headers from '../../../api/data/headers.json';
+import headers from '../../../mocks/headers.json';
 
 const [occasions, categories, about] = headers.data;
 const toArgs = (e: (typeof headers.data)[number]) => ({

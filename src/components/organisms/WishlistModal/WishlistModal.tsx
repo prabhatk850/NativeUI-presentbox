@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Modal, StyleSheet, Text, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { Heart } from '../../../icons';
+import { Heart } from '../../../theme/icons';
 import ExpandableSheet from '../../molecules/ExpandableSheet/ExpandableSheet';
 import ProductCard from '../../molecules/ProductCard/ProductCard';
 import { CategoryBubbles } from '../ProductHeader/ProductHeader';
 import Button from '../../atoms/Button/Button';
-import { getProducts } from '../../../api';
-import { ALL_PRODUCTS, groupByCategory, type Category } from '../../../helper';
+import { getProducts } from '../../../cms';
+import { ALL_PRODUCTS, groupByCategory, type Category } from '../../../utils';
 import { shop, useShop } from '../../../store';
 import { colors, type } from '../../../theme';
 

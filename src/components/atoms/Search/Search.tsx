@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, TextInput, View, type TextInputProps } from 'react-native';
-import { Search as SearchIcon } from '../../../icons';
+import { Search as SearchIcon } from '../../../theme/icons';
 import { colors, radius, type } from '../../../theme';
 
 type Props = TextInputProps & { fullWidth?: boolean; trailing?: React.ReactNode }; // trailing: e.g. a clear button inside the field

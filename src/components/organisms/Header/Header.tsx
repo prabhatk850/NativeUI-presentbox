@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import { Platform, Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
-import { CircleUser, Menu, X } from '../../../icons';
+import { CircleUser, Menu, X } from '../../../theme/icons';
 import MegaMenu from '../../molecules/MegaMenu/MegaMenu';
 import Breadcrumb from '../../molecules/Breadcrumb/Breadcrumb';
 import Tabs from '../../atoms/Tabs/Tabs';
 import MobileHeader from './MobileHeader';
 import { DeliverTo, SearchButton, ShopActions } from './ShopActions';
-import { getHeaders } from '../../../api';
+import { getHeaders } from '../../../cms';
 import { useShop } from '../../../store';
 import type { MenuItem } from '../../molecules/FooterMenuCard/FooterMenuCard';
 import { breakpoints, colors, fonts, layout, shadows } from '../../../theme';
 
 type MenuEntry = {
-  key: number;
+  key: string;
   name: string;
   heading: string;
   subheading: string;
-  links: { id: number; navlinks: MenuItem[] }[];
+  links: { id: string; navlinks: MenuItem[] }[];
   img: { url?: string } | null;
   grid: string;
 };
@@ -45,7 +45,7 @@ function Header({ onOpenAuth, center, transparent = false }: Props) {
   useEffect(() => {
     getHeaders()
       .then((res) => {
-        const items: MenuEntry[] = (res?.data ?? []).map((e) => ({
+        const items: MenuEntry[] = res.map((e) => ({
           key: e.id,
           name: e.name,
           heading: e.menuDescription?.heading ?? '',

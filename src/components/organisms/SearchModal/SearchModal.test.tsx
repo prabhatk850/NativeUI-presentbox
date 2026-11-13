@@ -3,7 +3,7 @@ import { act, render, screen, userEvent } from '@testing-library/react-native';
 import { useNavigation } from '@react-navigation/native';
 import SearchModal from './SearchModal';
 import { shop } from '../../../store';
-import page from '../../../api/data/productPage.json';
+import page from '../../../mocks/productPage.json';
 
 const INPUT = 'Search gifts, categories, occasions';
 const cakes = page.data.filter((p) => p.categoryId === 2);

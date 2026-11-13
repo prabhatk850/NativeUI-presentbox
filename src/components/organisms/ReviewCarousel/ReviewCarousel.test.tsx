@@ -1,12 +1,16 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react-native';
 import ReviewCarousel from './ReviewCarousel';
+import { pageSection } from '../../../mocks';
+
+const { heading, subheading, reviews } = pageSection('home', 'reviewsSection');
+const carousel = <ReviewCarousel heading={heading} subheading={subheading} reviews={reviews} />;
 
 const layout = { nativeEvent: { layout: { x: 0, y: 0, width: 700, height: 400 } } };
 
 describe('ReviewCarousel', () => {
   it('renders the reviews once the track is measured', async () => {
-    await render(<ReviewCarousel />);
+    await render(carousel);
     expect(screen.getByRole('header', { name: 'What customers are saying' })).toBeOnTheScreen();
     await fireEvent(screen.getByTestId('review-track'), 'layout', layout);
     expect(screen.getByText('Alice Johnson')).toBeOnTheScreen();
@@ -14,7 +18,7 @@ describe('ReviewCarousel', () => {
   });
 
   it('enables prev and disables next as the track scrolls', async () => {
-    await render(<ReviewCarousel />);
+    await render(carousel);
     await fireEvent(screen.getByTestId('review-track'), 'layout', layout);
     expect(screen.getByRole('button', { name: 'Previous review' })).toBeDisabled();
 

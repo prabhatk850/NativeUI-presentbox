@@ -1,14 +1,14 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View, useWindowDimensions, type StyleProp, type ViewStyle } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { ArrowUpRight } from '../../../icons';
+import { ArrowUpRight } from '../../../theme/icons';
 import Button from '../../atoms/Button/Button';
-import { getImageUrl } from '../../../api';
+import { getImageUrl } from '../../../utils';
 import { breakpoints, colors, radius, type } from '../../../theme';
 
 export type CategoryButton = { name?: string; color?: string; textColor?: string };
 type Props = {
-  variant?: 'big' | 'reactangle' | 'square' | string; // "reactangle" spelling comes from the API
+  variant?: 'big' | 'rectangle' | 'square' | string;
   title: string;
   description?: string;
   image?: string | { url?: string } | null;
@@ -20,7 +20,7 @@ function CategoryCard({ variant, title, description, image, button, style }: Pro
   const navigation = useNavigation();
   const { width } = useWindowDimensions();
   const narrow = width < breakpoints.sm;
-  const rect = variant === 'reactangle' && !narrow;
+  const rect = variant === 'rectangle' && !narrow;
   const uri = getImageUrl(image);
 
   const cta = button && (

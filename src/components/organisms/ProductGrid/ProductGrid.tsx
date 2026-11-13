@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, useWindowDimensions } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import ProductCard, { type ProductLayout } from '../../molecules/ProductCard/ProductCard';
-import type { Product } from '../../../helper';
+import type { Product } from '../../../utils';
 import { shop, useShop } from '../../../store';
 import { breakpoints, colors } from '../../../theme';
 

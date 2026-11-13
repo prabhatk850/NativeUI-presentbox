@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Linking, Pressable, StyleSheet, Text, type StyleProp, type TextStyle } from 'react-native';
 import { useLinkTo } from '@react-navigation/native';
-import { ArrowUpRight } from '../../../icons';
+import { ArrowUpRight } from '../../../theme/icons';
 import { type } from '../../../theme';
 
 type Props = {

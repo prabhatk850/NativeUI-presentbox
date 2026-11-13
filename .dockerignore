@@ -1,0 +1,11 @@
+# keeps the build context small, and .env (it holds the CMA token) out of the image
+node_modules
+android
+ios
+.git
+.idea
+dist-web
+storybook-static
+coverage
+.env
+*.local

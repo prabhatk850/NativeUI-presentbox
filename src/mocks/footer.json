@@ -1,0 +1,65 @@
+{
+  "data": {
+    "newsletter": true,
+    "section": [
+      {
+        "id": "footer-col-1",
+        "heading": "Shop",
+        "item": [
+          {
+            "id": "footer-link-1",
+            "lable": "All Gifts",
+            "url": "/products"
+          },
+          {
+            "id": "footer-link-2",
+            "lable": "Occasions",
+            "url": "/occasions"
+          },
+          {
+            "id": "footer-link-3",
+            "lable": "Best Sellers",
+            "url": "/products"
+          }
+        ]
+      },
+      {
+        "id": "footer-col-2",
+        "heading": "Help",
+        "item": [
+          {
+            "id": "footer-link-4",
+            "lable": "Contact Us",
+            "url": "/help"
+          },
+          {
+            "id": "footer-link-5",
+            "lable": "Shipping",
+            "url": "/help?topic=Delivery"
+          },
+          {
+            "id": "footer-link-6",
+            "lable": "Returns",
+            "url": "/help?topic=Returns"
+          }
+        ]
+      },
+      {
+        "id": "footer-col-3",
+        "heading": "Company",
+        "item": [
+          {
+            "id": "footer-link-7",
+            "lable": "About",
+            "url": "/about"
+          },
+          {
+            "id": "footer-link-8",
+            "lable": "Careers",
+            "url": "/careers"
+          }
+        ]
+      }
+    ]
+  }
+}

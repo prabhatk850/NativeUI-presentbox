@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pressable, StyleSheet, Text, View, type StyleProp, type ViewStyle } from 'react-native';
-import type { LucideIcon } from '../../../icons';
+import type { LucideIcon } from '../../../theme/icons';
 import { colors, fonts, shadows } from '../../../theme';
 
 // icon tabs render only the icon; label stays as the accessible name

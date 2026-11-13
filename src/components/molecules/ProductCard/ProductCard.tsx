@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
-import { ChevronRight, Heart, ShoppingCart, Star } from '../../../icons';
+import { ChevronRight, Heart, ShoppingCart, Star } from '../../../theme/icons';
 import { colors, fonts, radius, type } from '../../../theme';
 
 export type ProductLayout = 'list' | 'grid';

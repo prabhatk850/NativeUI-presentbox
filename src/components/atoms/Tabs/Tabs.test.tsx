@@ -1,6 +1,6 @@
 import React from 'react';
 import { fireEvent, render, screen, userEvent } from '@testing-library/react-native';
-import { LayoutGrid, List } from '../../../icons';
+import { LayoutGrid, List } from '../../../theme/icons';
 import Tabs from './Tabs';
 
 const tabs = [{ value: 'a', label: 'First' }, { value: 'b', label: 'Second' }];

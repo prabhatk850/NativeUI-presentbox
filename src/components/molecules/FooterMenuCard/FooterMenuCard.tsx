@@ -2,10 +2,10 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Link from '../../atoms/Link/Link';
 import { fonts } from '../../../theme';
-import { withCategory } from '../../../navigation';
+import { withCategory } from '../../../app/navigation';
 
 // "lable" spelling comes from the API
-export type MenuItem = { id: number; lable: string; url: string };
+export type MenuItem = { id: string; lable: string; url: string };
 
 function FooterMenuCard({ heading, items = [], arrow = false }: { heading: string; items?: MenuItem[]; arrow?: boolean }) {
   return (

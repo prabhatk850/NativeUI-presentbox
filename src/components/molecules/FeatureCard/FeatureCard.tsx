@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, useWindowDimensions } from 'react-native';
-import type { LucideIcon } from '../../../icons';
+import type { LucideIcon } from '../../../theme/icons';
 import { breakpoints, colors, fonts, radius, type } from '../../../theme';
 
 // Flat tile: on phones two per row with the icon above the label, on desktop a single row.

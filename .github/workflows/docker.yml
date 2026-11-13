@@ -1,0 +1,40 @@
+# On every push to dev, qa or main: build that branch's web image and push it to Docker Hub.
+#   dev → <repo>:dev   qa → <repo>:qa   main → <repo>:latest
+# GitHub repo → Settings → Secrets and variables → Actions:
+#   variables: DOCKERHUB_USERNAME, DOCKERHUB_REPO (for example prabhatk850/presentbox)
+#   secrets:   DOCKERHUB_TOKEN (Docker Hub → Account settings → Personal access tokens, Read & Write)
+#              CONTENTFUL_DELIVERY_TOKEN (a repo secret for all branches, or one per environment under Settings → Environments)
+name: Docker image
+
+on:
+  push:
+    branches: [dev, qa, main]
+
+permissions:
+  contents: read
+
+# a newer push to the same branch cancels the older run, so an older commit can't overwrite the tag last
+concurrency:
+  group: docker-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    # the branch name is the environment: APP_ENV, the GitHub Environment's secrets, and the tag
+    environment: ${{ github.ref_name }}
+    steps:
+      - uses: docker/setup-buildx-action@v4
+      - uses: docker/login-action@v4
+        with:
+          username: ${{ vars.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      # builds straight from the pushed commit (Git context), no checkout needed
+      - uses: docker/build-push-action@v7
+        with:
+          push: true
+          build-args: APP_ENV=${{ github.ref_name }}
+          secrets: contentful_token=${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+          tags: ${{ vars.DOCKERHUB_REPO }}:${{ github.ref_name == 'main' && 'latest' || github.ref_name }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

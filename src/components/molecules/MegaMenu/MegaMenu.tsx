@@ -2,12 +2,12 @@ import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import Line from '../../atoms/Line/Line';
 import Link from '../../atoms/Link/Link';
-import { getImageUrl } from '../../../api';
+import { getImageUrl } from '../../../utils';
 import { colors, fonts } from '../../../theme';
-import { withCategory } from '../../../navigation';
+import { withCategory } from '../../../app/navigation';
 import type { MenuItem } from '../FooterMenuCard/FooterMenuCard';
 
-type LinkGroup = { id: number; navlinks?: MenuItem[]; items?: MenuItem[] };
+type LinkGroup = { id: string; navlinks?: MenuItem[]; items?: MenuItem[] };
 type Links = LinkGroup[] | MenuItem[] | MenuItem[][];
 type Img = string | { url?: string } | null;
 type Props = { heading?: string; subheading?: string; links?: Links; img?: Img | Img[]; grid?: string };

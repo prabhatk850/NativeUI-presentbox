@@ -12,7 +12,8 @@
     "build:web": "vite build",
     "typecheck": "tsc --noEmit",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build -o storybook-static"
+    "build-storybook": "storybook build -o storybook-static",
+    "cms:seed": "node scripts/contentful/seed.js"
   },
   "dependencies": {
     "@react-navigation/native": "^7.5.0",

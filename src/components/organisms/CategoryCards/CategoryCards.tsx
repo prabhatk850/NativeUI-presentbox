@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { StyleSheet, View, useWindowDimensions } from 'react-native';
 import CategoryCard, { type CategoryButton } from '../../molecules/CategoryCard/CategoryCard';
-import { getCategoryCards } from '../../../api';
 import { breakpoints } from '../../../theme';
 
-type Card = {
-  id: number;
+export type Card = {
+  id: string;
   variant: string;
   title: string;
   description?: string;
@@ -19,15 +18,8 @@ const GAP = 16;
 // desktop  = big cards in a left column (3fr), the rest on the right (4fr): rectangles full row, squares in pairs
 // tablet   = big + rectangle full width, squares in pairs
 // phone    = one column
-function CategoryCards() {
-  const [cards, setCards] = useState<Card[]>([]);
+function CategoryCards({ cards }: { cards: Card[] }) {
   const { width } = useWindowDimensions();
-
-  useEffect(() => {
-    getCategoryCards()
-      .then(({ data }) => setCards(data))
-      .catch((error) => console.error('Error fetching category cards:', error));
-  }, []);
 
   const render = (c: Card, style?: object) => (
     <CategoryCard

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pressable, StyleSheet, Text, View, type StyleProp, type ViewStyle } from 'react-native';
-import { ChevronLeft, ChevronRight } from '../../../icons';
+import { ChevronLeft, ChevronRight } from '../../../theme/icons';
 import { colors, fonts, radius } from '../../../theme';
 
 type Props = {

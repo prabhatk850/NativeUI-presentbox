@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Pressable, StyleSheet, Text, TextInput, View, type TextInputProps } from 'react-native';
-import { Eye, EyeOff } from '../../../icons';
+import { Eye, EyeOff } from '../../../theme/icons';
 import { colors, fonts, type } from '../../../theme';
 
 // Label + input, with an optional show/hide toggle for passwords.

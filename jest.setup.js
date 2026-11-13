@@ -25,3 +25,6 @@ beforeEach(() => {
 
 // wishlist / cart / addresses live in a module-level store: start every test empty
 beforeEach(() => require('./src/store').shop.reset());
+
+// tests run on src/mocks even if the shell exports a Contentful token (src/cms/cms.test.ts sets its own)
+delete process.env.CONTENTFUL_DELIVERY_TOKEN;

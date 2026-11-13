@@ -9,7 +9,7 @@ import {
   type TextStyle,
   type ViewStyle,
 } from 'react-native';
-import type { LucideIcon } from '../../../icons';
+import type { LucideIcon } from '../../../theme/icons';
 import { colors, fonts } from '../../../theme';
 
 type Props = Omit<PressableProps, 'style' | 'children'> & {

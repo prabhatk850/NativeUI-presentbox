@@ -3,9 +3,9 @@ import { Image, Modal, Pressable, ScrollView, StyleSheet, Text, View, useWindowD
 import { useNavigation } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Search from '../../atoms/Search/Search';
-import { ChevronRight, Clock, Gift, LayoutGrid, SearchX, Sparkles, Star, TrendingUp, X, type LucideIcon } from '../../../icons';
-import { getProducts } from '../../../api';
-import { searchCatalog, searchWords, type Product } from '../../../helper';
+import { ChevronRight, Clock, Gift, LayoutGrid, SearchX, Sparkles, Star, TrendingUp, X, type LucideIcon } from '../../../theme/icons';
+import { getProducts } from '../../../cms';
+import { searchCatalog, searchWords, type Product } from '../../../utils';
 import { shop, useShop } from '../../../store';
 import { breakpoints, colors, fonts, radius, shadows, type } from '../../../theme';
 

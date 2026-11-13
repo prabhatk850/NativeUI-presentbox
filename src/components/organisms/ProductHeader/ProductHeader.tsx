@@ -6,8 +6,8 @@ import Dropdown from '../../molecules/Dropdown/Dropdown';
 import PageHeading from '../../molecules/PageHeading/PageHeading';
 import type { ProductLayout } from '../../molecules/ProductCard/ProductCard';
 import Filter from '../Filter/Filter';
-import type { Filters, Occasion } from '../../../helper';
-import { LayoutGrid, List } from '../../../icons';
+import type { Filters, Occasion } from '../../../utils';
+import { LayoutGrid, List } from '../../../theme/icons';
 import { colors, layout as spacing, shadows } from '../../../theme';
 
 const SORT_OPTIONS = ['Relevance', 'Price: Low to High', 'Price: High to Low', 'Customer Reviews'];

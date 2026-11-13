@@ -3,7 +3,7 @@ import { act, render, renderHook, screen, userEvent } from '@testing-library/rea
 import { useNavigation } from '@react-navigation/native';
 import WishlistModal from './WishlistModal';
 import { shop, useShop } from '../../../store';
-import page from '../../../api/data/productPage.json';
+import page from '../../../mocks/productPage.json';
 
 const [a, b] = page.data;
 

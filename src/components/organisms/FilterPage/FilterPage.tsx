@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, View, useWindowDimensions } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { IndianRupee, X } from '../../../icons';
+import { IndianRupee, X } from '../../../theme/icons';
 import ProductCategoryBubble from '../../atoms/ProductCategoryBubble/ProductCategoryBubble';
 import Tabs from '../../atoms/Tabs/Tabs';
 import Checkbox from '../../atoms/Checkbox/Checkbox';
-import { GENDERS, NO_FILTERS, type Filters, type Occasion } from '../../../helper';
+import { GENDERS, NO_FILTERS, type Filters, type Occasion } from '../../../utils';
 import { breakpoints, colors, fonts, radius, shadows, type } from '../../../theme';
 
 const RATINGS = [4.5, 4, 3];

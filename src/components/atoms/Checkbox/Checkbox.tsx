@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pressable, StyleSheet, Text, View, type StyleProp, type ViewStyle } from 'react-native';
-import { Check } from '../../../icons';
+import { Check } from '../../../theme/icons';
 import { colors, type } from '../../../theme';
 
 type Props = {

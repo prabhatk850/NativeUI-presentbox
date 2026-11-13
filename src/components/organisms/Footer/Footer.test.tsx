@@ -2,7 +2,7 @@ import React from 'react';
 import { Dimensions } from 'react-native';
 import { act, render, screen } from '@testing-library/react-native';
 import Footer from './Footer';
-import footer from '../../../api/data/footer.json';
+import footer from '../../../mocks/footer.json';
 
 const setWidth = (width: number) =>
   act(() => {

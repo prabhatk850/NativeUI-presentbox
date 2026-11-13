@@ -4,7 +4,7 @@ import { act, render, screen, userEvent, waitFor } from '@testing-library/react-
 import { useLinkTo, useNavigation } from '@react-navigation/native';
 import Header from './Header';
 import { shop } from '../../../store';
-import page from '../../../api/data/productPage.json';
+import page from '../../../mocks/productPage.json';
 
 const setWidth = (width: number) =>
   act(() => {

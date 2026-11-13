@@ -1,4 +1,4 @@
-import { ArrowUpRight, ShoppingBag } from '../../../icons';
+import { ArrowUpRight, ShoppingBag } from '../../../theme/icons';
 import type { Meta, StoryObj } from '@storybook/react-native-web-vite';
 import Button from './Button';
 

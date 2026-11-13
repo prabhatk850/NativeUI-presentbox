@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Menu } from '../../../icons';
+import { Menu } from '../../../theme/icons';
 import MenuDrawer from './MenuDrawer';
 import { DeliverTo, SearchButton, ShopActions } from './ShopActions';
 import type { MenuItem } from '../../molecules/FooterMenuCard/FooterMenuCard';
 import { colors, fonts, layout } from '../../../theme';
 
-export type MenuSection = { key: number; name: string; links: { id: number; navlinks: MenuItem[] }[] };
+export type MenuSection = { key: string; name: string; links: { id: string; navlinks: MenuItem[] }[] };
 
 type Props = {
   menu: MenuSection[];

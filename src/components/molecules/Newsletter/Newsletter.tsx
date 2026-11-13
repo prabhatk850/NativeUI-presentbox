@@ -1,6 +1,6 @@
 import React, { memo, useState } from 'react';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
-import { ArrowRight } from '../../../icons';
+import { ArrowRight } from '../../../theme/icons';
 import Button from '../../atoms/Button/Button';
 import { colors, fonts } from '../../../theme';
 

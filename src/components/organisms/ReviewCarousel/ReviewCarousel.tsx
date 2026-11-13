@@ -9,50 +9,17 @@ import {
   type NativeScrollEvent,
   type NativeSyntheticEvent,
 } from 'react-native';
-import { ChevronLeft, ChevronRight } from '../../../icons';
+import { ChevronLeft, ChevronRight } from '../../../theme/icons';
 import ReviewCard, { type Review } from '../../molecules/ReviewCard/ReviewCard';
 import { breakpoints, colors, type } from '../../../theme';
-
-const REVIEWS: Review[] = [
-  {
-    name: 'Alice Johnson',
-    rating: 5,
-    title: 'Fantastic Service!',
-    message:
-      'I had an amazing experience shopping here. The products are top-notch and the customer service is outstanding!',
-    avatar: 'https://randomuser.me/api/portraits/women/1.jpg',
-  },
-  {
-    name: 'Bob Smith',
-    rating: 4,
-    title: 'Great Quality',
-    message:
-      'The quality of the items I purchased exceeded my expectations. Will definitely shop here again.',
-    avatar: 'https://randomuser.me/api/portraits/men/2.jpg',
-  },
-  {
-    name: 'Catherine Lee',
-    rating: 5,
-    title: 'Highly Recommend',
-    message:
-      'Fast shipping and excellent customer support. I highly recommend this store to all my friends and family.',
-    avatar: 'https://randomuser.me/api/portraits/women/3.jpg',
-  },
-  {
-    name: 'David Brown',
-    rating: 4,
-    title: 'Very Satisfied',
-    message:
-      "Overall, I'm very satisfied with my purchase. The website was easy to navigate and the checkout process was smooth.",
-    avatar: 'https://randomuser.me/api/portraits/men/4.jpg',
-  },
-];
 
 const GAP_WIDE = 24;
 const GAP_NARROW = 12;
 const EDGE = 5; // px tolerance before an arrow counts as enabled
 
-function ReviewCarousel({ reviews = REVIEWS }: { reviews?: Review[] }) {
+type Props = { heading: string; subheading?: string; reviews: Review[] };
+
+function ReviewCarousel({ heading, subheading, reviews }: Props) {
   const listRef = useRef<FlatList<Review>>(null);
   const offset = useRef(0);
   const [trackWidth, setTrackWidth] = useState(0);
@@ -93,12 +60,9 @@ function ReviewCarousel({ reviews = REVIEWS }: { reviews?: Review[] }) {
             accessibilityRole="header"
             style={[styles.heading, narrow && styles.headingNarrow]}
           >
-            What customers are saying
+            {heading}
           </Text>
-          <Text style={styles.sub}>
-            Experience the convenience and satisfaction shared by our community
-            of shoppers.
-          </Text>
+          {!!subheading && <Text style={styles.sub}>{subheading}</Text>}
         </View>
         {!narrow && (
           <View style={styles.controls}>

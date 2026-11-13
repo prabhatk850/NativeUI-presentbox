@@ -9,14 +9,64 @@ React Native port of the `presentbox-ui` web app. One codebase runs on Android, 
 | `npm run web` / `npm run build:web` | Web via Vite + react-native-web (output in `dist-web/`) |
 | `npm run storybook` | Component stories in the browser |
 | `npm test` / `npm run lint` / `npm run typecheck` | Jest + React Native Testing Library, ESLint, TypeScript |
+| `npm run cms:seed` | Create the Contentful content model and upload the current content (see below) |
 
 Where things live:
 
-- `src/theme.ts` holds colors (primary = footer red), fonts, breakpoints. Change the brand color there.
-- `src/api` is the dummy API (JSON files). Swap a function body for a real `fetch` and components stay the same.
-- `src/components/{atoms,molecules,organisms,templates}` mirror the web app; each folder has the component, its test and its stories.
-- `src/icons.ts` lists every icon the app uses. Add new icons there so native bundles stay small.
-- Fonts live in `src/assets/fonts` and are linked with `npx react-native-asset`. Their file names match their PostScript names so one family name works on every platform.
+| Folder | What's in it |
+|---|---|
+| `src/app` | `App.tsx` (navigator) and `navigation.ts` (routes, URL linking) |
+| `src/cms` | Contentful: `client.ts` (Delivery API over `fetch`), `index.ts` (getters that map entries to app shapes), `config.json` (space ID, environment, locale) |
+| `src/sections` | Page blocks editors arrange in Contentful, and the registry that maps each Contentful section type to its component |
+| `src/components` | The UI library: `atoms`, `molecules`, `organisms`, `templates`, each with its test and stories. `index.ts` exports them all |
+| `src/screens` | `Page` (renders any route's Contentful page) and the screen blocks it can place (cart, catalog, help, …), each with its test and stories. `ProductDetail` is the sheet every product entry opens in |
+| `src/store` | Cart, wishlist, addresses, recent searches (in memory) |
+| `src/api` | Dummy account API (orders, payment methods) until a commerce backend exists |
+| `src/mocks` | JSON fixtures. The app runs on them when no Contentful token is set; tests, Storybook and `cms:seed` use them too |
+| `src/theme` | Colors (primary = footer red), fonts, breakpoints in `index.ts`. `icons.ts` lists every icon the app uses; add new icons there so native bundles stay small |
+| `src/utils` | Price, filter and search helpers |
+| `src/assets` | Fonts (linked with `npx react-native-asset`; file names match their PostScript names) and the hero video |
+
+## Contentful
+
+Space `phud3kz30g4d` drives the whole app: header menu, footer, the product catalog, and every screen. Each route renders the Contentful **page** whose slug is its URL path (`home` for `/`, `products`, `payment-methods`, …), block by block in the order editors set:
+
+- content blocks: hero video, category cards, reviews, features, Help Center, About, Careers
+- **App screen** blocks place a built-in screen (products, occasions, cart, profile, orders, payment methods); their data comes from the catalog and the shopper's account, which stays out of Contentful
+
+The product sheet (`/products/:id`) is a template filled by each product entry.
+
+First-time setup:
+
+1. Copy `.env.example` to `.env`.
+2. In Contentful, create a CMA token (Settings → CMA tokens) and put it in `CONTENTFUL_MANAGEMENT_TOKEN`.
+   The token must be authorized for the organization: Account settings → CMA tokens → **Authorize** next to the organization, or the API answers `OrganizationAccessGrantRequired`.
+3. Run `npm run cms:seed`. It creates the content types and uploads everything in `src/mocks` (all pages, in the app's order) as published entries. Run it once: it overwrites entries that have the same IDs. To update only the content types later, run `npm run cms:seed -- --content-model-only`.
+4. Create a Delivery API key (Settings → API keys) and put its access token in `CONTENTFUL_DELIVERY_TOKEN`.
+5. Restart Metro or Vite. The app now reads Contentful; delete the token to go back to the mocks.
+
+Content is cached in memory for the app session, so editors' changes show after an app restart.
+
+Adding a page block (for example a banner):
+
+1. Add a content type to `scripts/contentful/model.js` and add its id to `SECTION_TYPES`.
+2. Add its shape to the `Section` type and a mapper to `SECTIONS` in `src/cms/index.ts`.
+3. Write the component and register it in `BLOCKS` in `src/sections/index.tsx`, using components from `src/components`.
+4. Add a mock block to `src/mocks/pages.json` and a builder to `SECTIONS` in `scripts/contentful/seed.js`. `src/cms/cms.test.ts` checks the model, the seed and the mapper agree.
+5. Run `npm run cms:seed -- --content-model-only` to create the new type in Contentful.
+
+The app skips block types it has no component for, so publishing a new block can't break older app versions.
+
+## Docker
+
+The `Dockerfile` builds the web app and serves it with nginx on port 80. `APP_ENV` (`dev`, `qa` or `main`, default `main`) picks the environment:
+
+```sh
+docker build --build-arg APP_ENV=qa --secret id=contentful_token,env=CONTENTFUL_DELIVERY_TOKEN -t presentbox:qa .
+docker run -p 8080:80 presentbox:qa
+```
+
+Every push to `dev`, `qa` or `main` runs `.github/workflows/docker.yml`. It builds that branch's image only and pushes it to Docker Hub as `:dev`, `:qa` or `:latest` (main). The comment at the top of the workflow lists the secrets and variables it needs.
 
 ---
 

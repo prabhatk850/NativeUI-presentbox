@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { MapPin, Plus, Trash } from '../../../icons';
+import { MapPin, Plus, Trash } from '../../../theme/icons';
 import Sheet from '../../molecules/Sheet/Sheet';
 import Field from '../../atoms/Field/Field';
 import Tabs from '../../atoms/Tabs/Tabs';

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Modal, Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
-import { Check, ChevronDown } from '../../../icons';
+import { Check, ChevronDown } from '../../../theme/icons';
 import { colors, fonts, shadows } from '../../../theme';
 
 type Props = {

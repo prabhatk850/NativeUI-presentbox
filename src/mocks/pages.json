@@ -1,0 +1,340 @@
+{
+  "home": {
+    "id": "page-home",
+    "slug": "home",
+    "title": "Home",
+    "sections": [
+      {
+        "type": "heroSection",
+        "id": "home-hero",
+        "headline": "A gifting company that turns moments into memories."
+      },
+      {
+        "type": "categoryCardsSection",
+        "id": "home-categories",
+        "title": "Shop by category",
+        "cards": [
+          {
+            "id": "card-1",
+            "variant": "big",
+            "title": "All Products",
+            "description": "Make their day unforgettable.",
+            "img": {
+              "url": "https://i.pinimg.com/1200x/3c/4a/0b/3c4a0b1790593d4fe45bddff12006eb6.jpg"
+            },
+            "button": {
+              "name": "Browse All Products",
+              "color": "#d32f2f"
+            }
+          },
+          {
+            "id": "card-4",
+            "variant": "rectangle",
+            "title": "Hampers",
+            "description": "Curated boxes for every taste.",
+            "img": {
+              "url": "https://i.pinimg.com/1200x/de/02/55/de025520655e8aa7bd9c65d4c79cd64c.jpg"
+            },
+            "button": {
+              "name": "Shop now",
+              "color": "#fff",
+              "textColor": "black"
+            }
+          },
+          {
+            "id": "card-2",
+            "variant": "square",
+            "title": "Flowers",
+            "description": "Fresh bouquets delivered today.",
+            "img": {
+              "url": "https://i.pinimg.com/1200x/2c/7d/ef/2c7defb55d5b41aecf4a71cebb617aa8.jpg"
+            },
+            "button": {
+              "color": "#fff",
+              "textColor": "black"
+            }
+          },
+          {
+            "id": "card-3",
+            "variant": "square",
+            "title": "Cakes",
+            "description": "Baked fresh for every celebration.",
+            "img": {
+              "url": "https://i.pinimg.com/1200x/24/c7/28/24c72886928b5122fa8c94abc3b2667d.jpg"
+            },
+            "button": {
+              "color": "#fff",
+              "textColor": "black"
+            }
+          }
+        ]
+      },
+      {
+        "type": "reviewsSection",
+        "id": "home-reviews",
+        "heading": "What customers are saying",
+        "subheading": "Experience the convenience and satisfaction shared by our community of shoppers.",
+        "reviews": [
+          {
+            "name": "Alice Johnson",
+            "rating": 5,
+            "title": "Fantastic Service!",
+            "message": "I had an amazing experience shopping here. The products are top-notch and the customer service is outstanding!",
+            "avatar": "https://randomuser.me/api/portraits/women/1.jpg"
+          },
+          {
+            "name": "Bob Smith",
+            "rating": 4,
+            "title": "Great Quality",
+            "message": "The quality of the items I purchased exceeded my expectations. Will definitely shop here again.",
+            "avatar": "https://randomuser.me/api/portraits/men/2.jpg"
+          },
+          {
+            "name": "Catherine Lee",
+            "rating": 5,
+            "title": "Highly Recommend",
+            "message": "Fast shipping and excellent customer support. I highly recommend this store to all my friends and family.",
+            "avatar": "https://randomuser.me/api/portraits/women/3.jpg"
+          },
+          {
+            "name": "David Brown",
+            "rating": 4,
+            "title": "Very Satisfied",
+            "message": "Overall, I'm very satisfied with my purchase. The website was easy to navigate and the checkout process was smooth.",
+            "avatar": "https://randomuser.me/api/portraits/men/4.jpg"
+          }
+        ]
+      },
+      {
+        "type": "featuresSection",
+        "id": "home-features",
+        "title": "Why PresentBox",
+        "features": [
+          {
+            "icon": "ShoppingBag",
+            "label": "Easy For Shopping"
+          },
+          {
+            "icon": "Truck",
+            "label": "Fast & Free Shipping"
+          },
+          {
+            "icon": "Headphones",
+            "label": "24/7 Support"
+          },
+          {
+            "icon": "RefreshCcw",
+            "label": "Money Back Guarantee"
+          }
+        ]
+      }
+    ]
+  },
+  "products": {
+    "id": "page-products",
+    "slug": "products",
+    "title": "Products",
+    "sections": [
+      {
+        "type": "appSection",
+        "id": "products-screen",
+        "component": "products"
+      }
+    ]
+  },
+  "occasions": {
+    "id": "page-occasions",
+    "slug": "occasions",
+    "title": "Occasions",
+    "sections": [
+      {
+        "type": "appSection",
+        "id": "occasions-screen",
+        "component": "occasions"
+      }
+    ]
+  },
+  "cart": {
+    "id": "page-cart",
+    "slug": "cart",
+    "title": "Cart",
+    "sections": [
+      {
+        "type": "appSection",
+        "id": "cart-screen",
+        "component": "cart"
+      }
+    ]
+  },
+  "profile": {
+    "id": "page-profile",
+    "slug": "profile",
+    "title": "My Profile",
+    "sections": [
+      {
+        "type": "appSection",
+        "id": "profile-screen",
+        "component": "profile"
+      }
+    ]
+  },
+  "orders": {
+    "id": "page-orders",
+    "slug": "orders",
+    "title": "Orders",
+    "sections": [
+      {
+        "type": "appSection",
+        "id": "orders-screen",
+        "component": "orders"
+      }
+    ]
+  },
+  "payment-methods": {
+    "id": "page-payment-methods",
+    "slug": "payment-methods",
+    "title": "Payment Methods",
+    "sections": [
+      {
+        "type": "appSection",
+        "id": "payment-methods-screen",
+        "component": "paymentMethods"
+      }
+    ]
+  },
+  "help": {
+    "id": "page-help",
+    "slug": "help",
+    "title": "Help Center",
+    "sections": [
+      {
+        "type": "helpSection",
+        "id": "help-faqs",
+        "title": "Help Center",
+        "subtitle": "Answers to common questions, or get in touch with us.",
+        "faqs": [
+          {
+            "id": "faq-1",
+            "topic": "Orders",
+            "question": "How do I track my order?",
+            "answer": "Open Orders from the menu. Each order shows its status and expected delivery date, and updates as soon as the courier scans it."
+          },
+          {
+            "id": "faq-2",
+            "topic": "Delivery",
+            "question": "Is delivery free?",
+            "answer": "Yes, on orders above INR 999. Smaller orders have a flat INR 49 delivery fee."
+          },
+          {
+            "id": "faq-3",
+            "topic": "Delivery",
+            "question": "Can I schedule a delivery for a specific date?",
+            "answer": "Flowers and cakes can be scheduled up to 7 days ahead. Pick a date at checkout and we’ll deliver it fresh on the day."
+          },
+          {
+            "id": "faq-4",
+            "topic": "Returns",
+            "question": "What is your return policy?",
+            "answer": "Non-perishable gifts can be returned within 7 days of delivery. Flowers, cakes and chocolates can’t be returned, but we’ll replace them if they arrive damaged."
+          },
+          {
+            "id": "faq-5",
+            "topic": "Payments",
+            "question": "Which payment methods do you accept?",
+            "answer": "UPI, all major debit and credit cards, net banking and popular wallets. Saved methods appear under Payment Methods."
+          },
+          {
+            "id": "faq-6",
+            "topic": "Gifting",
+            "question": "Can I add a personal message?",
+            "answer": "Every order includes a free message card. Personalised gifts like journals and mugs also let you add a name before checkout."
+          }
+        ],
+        "contact": {
+          "email": "support@presentbox.example",
+          "phone": "+911800123456",
+          "hours": "Every day, 9 am – 9 pm"
+        }
+      }
+    ]
+  },
+  "about": {
+    "id": "page-about",
+    "slug": "about",
+    "title": "About",
+    "sections": [
+      {
+        "type": "aboutSection",
+        "id": "about-story",
+        "eyebrow": "About PresentBox",
+        "heading": "Thoughtful gifts, delivered with care",
+        "story": [
+          "PresentBox started with a simple idea: gifting should feel as good as receiving. We hand-pick aesthetic, made-to-be-shared gifts — fresh flowers, small-batch cakes, cosy hampers and little things for the room — so you can find the right one in minutes.",
+          "Every order is packed by hand, includes a free message card and is delivered fresh, so it arrives looking the way it did when we packed it."
+        ],
+        "values": [
+          {
+            "id": "value-1",
+            "title": "Curated, not cluttered",
+            "text": "A short list of gifts we would happily give ourselves."
+          },
+          {
+            "id": "value-2",
+            "title": "Packed by hand",
+            "text": "Wrapped with care and checked twice before it leaves."
+          },
+          {
+            "id": "value-3",
+            "title": "For every moment",
+            "text": "Birthdays, big wins and the just-because days in between."
+          }
+        ]
+      }
+    ]
+  },
+  "careers": {
+    "id": "page-careers",
+    "slug": "careers",
+    "title": "Careers",
+    "sections": [
+      {
+        "type": "careersSection",
+        "id": "careers-roles",
+        "eyebrow": "Careers",
+        "heading": "Help us make gifting feel special",
+        "intro": "We are a small team that cares about the details. If that sounds like you, we would love to hear from you.",
+        "email": "careers@presentbox.example",
+        "roles": [
+          {
+            "id": "role-1",
+            "title": "Gift Curator",
+            "team": "Merchandising",
+            "location": "New Delhi",
+            "type": "Full-time"
+          },
+          {
+            "id": "role-2",
+            "title": "React Native Engineer",
+            "team": "Engineering",
+            "location": "Remote (India)",
+            "type": "Full-time"
+          },
+          {
+            "id": "role-3",
+            "title": "Customer Happiness Lead",
+            "team": "Support",
+            "location": "Bengaluru",
+            "type": "Full-time"
+          },
+          {
+            "id": "role-4",
+            "title": "Social Media Creator",
+            "team": "Marketing",
+            "location": "Mumbai",
+            "type": "Contract"
+          }
+        ]
+      }
+    ]
+  }
+}

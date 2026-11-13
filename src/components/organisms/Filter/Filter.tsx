@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { KeyboardAvoidingView, Modal, Platform, Pressable, StyleSheet, useWindowDimensions } from 'react-native';
-import { SlidersHorizontal } from '../../../icons';
+import { SlidersHorizontal } from '../../../theme/icons';
 import Button from '../../atoms/Button/Button';
 import FilterPage from '../FilterPage/FilterPage';
-import { activeFilterCount, type Filters, type Occasion } from '../../../helper';
+import { activeFilterCount, type Filters, type Occasion } from '../../../utils';
 import { breakpoints, colors, fonts } from '../../../theme';
 
 // Toolbar "Filter" button. Phones get a bottom sheet, wider screens a centred panel.

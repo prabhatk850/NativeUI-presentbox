@@ -14,10 +14,10 @@ import {
 } from 'react-native';
 import { useLinkTo } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { ChevronLeft, ChevronRight, CircleUser, CreditCard, Gift, House, LayoutGrid, LifeBuoy, Package, X, type LucideIcon } from '../../../icons';
+import { ChevronLeft, ChevronRight, CircleUser, CreditCard, Gift, House, LayoutGrid, LifeBuoy, Package, X, type LucideIcon } from '../../../theme/icons';
 import type { MenuSection } from './MobileHeader';
 import { colors, fonts, layout, radius, shadows, type } from '../../../theme';
-import { withCategory } from '../../../navigation';
+import { withCategory } from '../../../app/navigation';
 import { useShop } from '../../../store';
 
 const NATIVE = Platform.OS !== 'web'; // native driver isn't available on web

@@ -3,11 +3,11 @@ import { StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import FooterMenuCard, { type MenuItem } from '../../molecules/FooterMenuCard/FooterMenuCard';
 import Newsletter from '../../molecules/Newsletter/Newsletter';
 import Link from '../../atoms/Link/Link';
-import { getFooter } from '../../../api';
+import { getFooter } from '../../../cms';
 import { breakpoints, colors, fonts, gradients } from '../../../theme';
-import { withCategory } from '../../../navigation';
+import { withCategory } from '../../../app/navigation';
 
-type FooterData = { newsletter?: boolean; section?: { id: number; heading: string; item: MenuItem[] }[] };
+type FooterData = { newsletter?: boolean; section?: { id: string; heading: string; item: MenuItem[] }[] };
 
 function Footer() {
   const [data, setData] = useState<FooterData | null>(null);
@@ -17,7 +17,7 @@ function Footer() {
 
   useEffect(() => {
     getFooter()
-      .then((res) => setData(res?.data ?? {}))
+      .then(setData)
       .catch((err) => console.error('Footer load error:', err));
   }, []);
 

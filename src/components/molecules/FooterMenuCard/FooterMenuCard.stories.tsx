@@ -16,5 +16,5 @@ export default meta;
 type Story = StoryObj<typeof FooterMenuCard>;
 
 export const Default: Story = {
-  args: { heading: 'Help', arrow: true, items: [{ id: 1, lable: 'Contact Us', url: '#' }, { id: 2, lable: 'Shipping', url: '#' }] },
+  args: { heading: 'Help', arrow: true, items: [{ id: '1', lable: 'Contact Us', url: '#' }, { id: '2', lable: 'Shipping', url: '#' }] },
 };

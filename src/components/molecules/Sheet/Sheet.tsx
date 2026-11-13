@@ -1,7 +1,7 @@
 import React from 'react';
 import { KeyboardAvoidingView, Modal, Platform, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { X } from '../../../icons';
+import { X } from '../../../theme/icons';
 import { breakpoints, colors, radius, shadows, type } from '../../../theme';
 
 type Props = {
